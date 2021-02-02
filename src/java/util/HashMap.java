@@ -606,10 +606,10 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * @return the previous value associated with <tt>key</tt>, or
      *         <tt>null</tt> if there was no mapping for <tt>key</tt>.
      *         (A <tt>null</tt> return can also indicate that the map
-     *         previously associated <tt>null</tt> with <tt>key</tt>.)
+     *         previously associated <tt>null</tt>  with <tt>key</tt>.)
      */
     public V put(K key, V value) {
-        // hash() hash值扰动，生成一个新的hash值
+        // hash(K) hash值扰动，生成一个新的hash值
         return putVal(hash(key), key, value, false, true);
     }
 
